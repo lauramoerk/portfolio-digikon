@@ -9,29 +9,35 @@
 </head>
 <body>
     <header>
-        <!-- Burger Menu Button -->
-        <div class="burger-menu" onclick="toggleMenu()">
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-        </div>
-    
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-    
-            <!-- Contact menu with submenu -->
-            <div class="menu-item has-submenu">
-                <a href="#" class="submenu-toggle">Contact ▼</a>
-                <div class="submenu">
-                    <a href="#">Email</a>
-                    <a href="#">Phone</a>
-                    <a href="#">Location</a>
-                </div>
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <!-- Burger Menu Button (only for mobile) -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
             </div>
-        </div>
+    
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">hjem</a></li>
+                <li><a href="#">om mig</a></li>
+                <li><a href="#">kontakt</a></li>
+    
+                <!-- Contact menu with submenu -->
+                <li class="menu-item has-submenu">
+                    <a href="#" class="submenu-toggle">cases</a>
+                    <ul class="submenu">
+                        <li><a href="#">Apple Vision Pro x Mary Elizabeths Børnehospital</a></li>
+                        <li><a href="#">GirlTalk Visuel Identitet</a></li>
+                        <li><a href="#">GirlTalk Hjemmeside</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Location</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
     
 
