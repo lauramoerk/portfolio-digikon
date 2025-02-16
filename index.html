@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Burger Menu Button -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+    
+            <!-- Contact menu with submenu -->
+            <div class="menu-item has-submenu">
+                <a href="#" class="submenu-toggle">Contact ▼</a>
+                <div class="submenu">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Location</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+<main>
+    <div class="container ">
+        <div class="left-section">
+            <div>
+            <div class="info">
+                <p>Laura Mørk<br>2025</p>
+                <p><a href="#">www.lauramoerkportfolio.com</a></p>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+        <div class="right-section">
+            <div class="large-image">
+                <img src="assets/indeximg/portfolio1.JPEG" alt="Black and white street photography">
+            </div>
+        </div>
+        <div class="portfolio-text">
+            <p>portfolio</p>
+        </div>
+    </div>
+
+    <section class="selected-work">
+        <h2>SELECTED WORK</h2>
+        <div class="work-grid">
+            <a href="duckwise.html" class="work-item">
+                <img class="work-img " src="./assets/indeximg/portfolio1.JPEG" alt="Gestalt Magasin">
+                <p>APPLE VISION PRO X MARY ELIZABETHS BØRNEHOSPITAL</p>
+            </a>
+            <a href="restaurant.html" class="work-item">
+                <img class="work-img " src="./assets/indeximg/portfolio1.JPEG"alt="Restaurant Il Gallo">
+                <p>GIRLTALK VISUEL IDENTIET</p>
+            </a>
+            <a href="vuffeli.html" class="work-item">
+                <img class="work-img " src="./assets/indeximg/portfolio1.JPEG" alt="Vuffeli">
+                <p>VISUALISERING AF GRUPPEMATERIALE</p>
+            </a>
+            <a href="apple.html" class="work-item">
+                <img class="work-img " src="./assets/indeximg/portfolio1.JPEG" alt="Apple Vision Pro">
+                <p>APPLE VISION PRO</p>
+            </a>
+            <a href="das-buro.html" class="work-item">
+                <img class="work-img " src="./assets/indeximg/portfolio1.JPEG" alt="Das Büro">
+                <p>DAS BÜRO</p>
+            </a>
+            <a href="fotografi.html" class="work-item">
+                <img class="work-img" src="./assets/indeximg/portfolio1.JPEG" alt="Fotografi Galleri">
+                <p>ILLUSTRATIONER TIL BOGEN PIGETANKER</p>
+            </a>
+        </div>
+    </section>
+    
+</main>
+</body>
+</html>
