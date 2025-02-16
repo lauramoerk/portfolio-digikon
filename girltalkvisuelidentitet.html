@@ -5,46 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body class="gt">
     <header>
-        <img src="assets/indeximg/portfolio3.JPEG" alt="Project header image" class="header-image">
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <!-- Burger Menu Button (only for mobile) -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+    
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">hjem</a></li>
+                <li><a href="#">om mig</a></li>
+                <li><a href="#">kontakt</a></li>
+    
+                <!-- Contact menu with submenu -->
+                <li class="menu-item has-submenu">
+                    <a href="#" class="submenu-toggle">cases</a>
+                    <ul class="submenu">
+                        <li><a href="#">Apple Vision Pro x Mary Elizabeths Børnehospital</a></li>
+                        <li><a href="#">GirlTalk Visuel Identitet</a></li>
+                        <li><a href="#">GirlTalk Hjemmeside</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Location</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+
     
     <main class="project-container">
-        <section class="project-intro">
-            <h1>Project Title</h1>
-            <p class="project-description">
-                I samarbejde med det digitale designbureau Duckwise udviklede jeg et digitalt koncept for integrationen af Apple Vision Pro på det nye Mary Elizabeth Hospital.
-</p>
-<p class="project-description">
-                Målet var at forbedre akutbehandlingen ved hjælp af augmented reality, så sundhedspersonale kunne træffe hurtigere og mere præcise beslutninger i kritiske situationer. Gennem en brugercentreret designproces undersøgte vi teknologiens potentiale til at optimere arbejdsprocesser og skabe bedre patientoplevelser.
-            </p>
-            <p class="project-description">
-                Resultatet blev et innovativt koncept, der demonstrerer, hvordan AR-teknologi kan understøtte sundhedspersonalet ved at dele visuelle data i realtid under pres. En spændende og lærerig proces, hvor design, brugertest og teknologisk nytænkning gik hånd i hånd.
-            </p>
+
+        
+        <section class="project-feature">
+            <div class="text-content">
+                <h2>Innovation / Prototyping / AR / VR / Figma</h2>
+                <h1>GirlTalk Visuel Identitet</h1>
+                <p>
+                    Jeg har udviklet GirlTalks designguide, hjemmesidedesign og SoMe-skabeloner i tæt samarbejde med kommunikationsafdelingen. Designet er skabt med en evolutionær tilgang, så det passer til afdelingens arbejdsgange og visuelle identitet. Derudover har jeg designet en række fysiske materialer, herunder merch, klistermærker og tote-bags, der understøtter GirlTalks brand og budskab.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="assets/girltalkprojectimg/7.jpg" alt="Apple Vision Pro">
+            </div>
         </section>
+
         
         <section class="project-content">
             <div class="image-block">
-                <img src="assets/indeximg/portfolio1.JPEG" alt="Project image 1">
+                <img src="assets/girltalkprojectimg/colorcombo1.jpg" alt="Project image 1">
             </div>
             <div class="image-block">
-                <img src="assets/indeximg/portfolio1.JPEG"  alt="Project image 2">
+                <img src="assets/girltalkprojectimg/colorcombo2.jpg"  alt="Project image 2">
             </div>
             <div class="text-block">
-                <p>Additional insights or reflections on the project.</p>
+                <p> Noget af det mest spændende har været at udvikle materialer til GirlTalks gruppeforløb. Her har jeg skabt illustrationer, der bruges i samtaler og øvelser om emner som venskaber, ensomhed, kærlighed og selvværd. Illustrationerne gør det lettere at tale om svære følelser og hjælper deltagerne med at spejle sig i hinanden, så de oplever, at de ikke står alene.</p>
             </div>
         </section>
+        
         <section class="project-content">
             <div class="text-block">
-                <p>Additional insights or reflections on the project.</p>
-            </div>
-            <div class="text-block">
-                <p>Detailed explanation of the project, its goals, and the process.</p>
+             <p> Noget af det mest spændende har været at udvikle materialer til GirlTalks gruppeforløb. Her har jeg skabt illustrationer, der bruges i samtaler og øvelser om emner som venskaber, ensomhed, kærlighed og selvværd. Illustrationerne gør det lettere at tale om svære følelser og hjælper deltagerne med at spejle sig i hinanden, så de oplever, at de ikke står alene.</p></p>
             </div>
             <div class="image-block">
-                <img src="assets/indeximg/portfolio1.JPEG" alt="Project image 1">
+                <img src="assets/girltalkprojectimg/6.jpg" alt="Project image 1">
+            </div>
+            <div class="image-block">
+                <img src="assets/girltalkprojectimg/5.jpg" alt="Project image 1">
             </div>
          
         </section>

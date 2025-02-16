@@ -5,32 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="assets/indeximg/portfolio3.JPEG" alt="Project header image" class="header-image">
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <!-- Burger Menu Button (only for mobile) -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+    
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">hjem</a></li>
+                <li><a href="#">om mig</a></li>
+                <li><a href="#">kontakt</a></li>
+    
+                <!-- Contact menu with submenu -->
+                <li class="menu-item has-submenu">
+                    <a href="#" class="submenu-toggle">cases</a>
+                    <ul class="submenu">
+                        <li><a href="#">Apple Vision Pro x Mary Elizabeths Børnehospital</a></li>
+                        <li><a href="#">GirlTalk Visuel Identitet</a></li>
+                        <li><a href="#">GirlTalk Hjemmeside</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Location</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
     
+   
+    
     <main class="project-container">
-        <section class="project-intro">
-            <h1>Project Title</h1>
-            <p class="project-description">
-                I samarbejde med det digitale designbureau Duckwise udviklede jeg et digitalt koncept for integrationen af Apple Vision Pro på det nye Mary Elizabeth Hospital.
-</p>
-<p class="project-description">
-                Målet var at forbedre akutbehandlingen ved hjælp af augmented reality, så sundhedspersonale kunne træffe hurtigere og mere præcise beslutninger i kritiske situationer. Gennem en brugercentreret designproces undersøgte vi teknologiens potentiale til at optimere arbejdsprocesser og skabe bedre patientoplevelser.
-            </p>
-            <p class="project-description">
-                Resultatet blev et innovativt koncept, der demonstrerer, hvordan AR-teknologi kan understøtte sundhedspersonalet ved at dele visuelle data i realtid under pres. En spændende og lærerig proces, hvor design, brugertest og teknologisk nytænkning gik hånd i hånd.
-            </p>
+        <section class="project-feature">
+            <div class="text-content">
+                <h2>Innovation / Prototyping / AR / VR / Figma</h2>
+                <h1>Apple Vision Pro x Mary Elizabeths Hospital</h1>
+                <p>
+                    I samarbejde med det digitale designbureau Duckwise udviklede jeg et digitalt koncept for integrationen af Apple Vision Pro på det nye Mary Elizabeth Hospital.
+                    Målet var at forbedre akutbehandlingen ved hjælp af augmented reality, så sundhedspersonale kunne træffe hurtigere og mere præcise beslutninger i kritiske situationer. Gennem en brugercentreret designproces undersøgte vi teknologiens potentiale til at optimere arbejdsprocesser og skabe bedre patientoplevelser.
+                    Resultatet blev et innovativt koncept, der demonstrerer, hvordan AR-teknologi kan understøtte sundhedspersonalet ved at dele visuelle data i realtid under pres. En spændende og lærerig proces, hvor <u>design, brugertest og teknologisk nytænkning </u>gik hånd i hånd.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="assets/images/portfolio1.JPEG" alt="Apple Vision Pro">
+            </div>
         </section>
-        
+
+
         <section class="project-content">
             <div class="image-block">
-                <img src="assets/indeximg/portfolio1.JPEG" alt="Project image 1">
+                <img src="assets/images/portfolio3.JPEG" alt="Project image 1">
             </div>
             <div class="image-block">
-                <img src="assets/indeximg/portfolio1.JPEG"  alt="Project image 2">
+                <img src="assets/images/portfolio3.JPEG"  alt="Project image 2">
             </div>
             <div class="text-block">
                 <p>Additional insights or reflections on the project.</p>
@@ -44,9 +78,19 @@
                 <p>Detailed explanation of the project, its goals, and the process.</p>
             </div>
             <div class="image-block">
-                <img src="assets/indeximg/portfolio1.JPEG" alt="Project image 1">
+                <img src="assets/images/portfolio3.JPEG" alt="Project image 1">
             </div>
          
+        </section>
+
+        <section class="project-content">
+            <div class="image-block">
+                <img src="assets/images/portfolio3.JPEG" alt="Project image 1">
+            </div>
+
+            <div class="text-block">
+                <p>User Journey Map</p>
+            </div>
         </section>
     </main>
 </body>
