@@ -89,8 +89,8 @@ margin-right:80px
 
 .portfolio-text p{
     position: fixed;
-    top: 0px; /* Adjust the top spacing */
-   left: 0px; /* Adjust based on layout */
+    top: 14px; /* Adjust the top spacing */
+   left: -15px; /* Adjust based on layout */
     font-size: 100px;
     font-weight: bold;
     color: #c0392b;
@@ -142,6 +142,18 @@ margin-right:80px
     opacity: 1;
     transform: translateY(0);
 }
+
+/*SPECIFICPAGES STYLE*/
+
+/*GT PAGES*/
+.gt h1{
+    color: #273aaa;
+}
+
+.girltalkweb .project-feature h1{
+    color: #273aaa;
+}
+
 
 
 /* NAVBAR STYLES */
@@ -321,15 +333,15 @@ margin-right:80px
     aspect-ratio: 1 / 1;  /* Ensures a square shape */
     object-fit: cover;  /* Clips the image instead of stretching */
     display: block;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .work-item p {
     font-size: 16px;
     font-weight: bold;
-    color: red;
+    color: var(--pri-clr);
     margin-top: 10px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--pri-clr);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -355,6 +367,13 @@ margin-right:80px
 .project-feature .text-content {
     flex: 1;
     max-width: 600px;
+}
+
+.project-link{
+    text-align: end;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--pri-clr);
 }
 
 .project-feature h2 {
@@ -441,15 +460,52 @@ margin-right:80px
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 0px;
+}
+
+.ujm img{
+    max-height: 500px;
+    width: auto;
+    display: block;
     border-radius: 5px;
 }
 
 
-
-/*GT PAGE*/
-.gt h1{
-    color: #273aaa;
+/*PROJECT PAGE LIGHTBOX*/
+/* Lightbox background overlay */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
+
+/* Lightbox image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Close button */
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -595,7 +651,7 @@ main{
 @media (max-width: 768px) {
     .portfolio-text p{
         font-size: 60px;
-        padding-left: 20px; /* Matches mobile main margin */
+        padding-left: 15px; /* Matches mobile main margin */
     }
 }
 

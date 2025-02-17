@@ -32,3 +32,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fadeElements.forEach(element => observer.observe(element));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".image-block img, .image-content img"); // Select all images
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.querySelector(".lightbox-img");
+
+    // Open Lightbox
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            lightbox.style.display = "flex"; // Show the lightbox
+            lightboxImg.src = this.src; // Set clicked image as lightbox image
+        });
+    });
+
+    // Close Lightbox when clicking outside the image
+    lightbox.addEventListener("click", function (e) {
+        if (e.target !== lightboxImg) {
+            closeLightbox();
+        }
+    });
+
+    // Close Lightbox function
+    function closeLightbox() {
+        lightbox.style.display = "none";
+    }
+});
