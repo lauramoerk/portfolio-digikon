@@ -146,13 +146,13 @@ margin-right:80px
 /*SPECIFICPAGES STYLE*/
 
 /*GT PAGES*/
-.gt h1{
+/* .gt .project-feature h1{
     color: #273aaa;
 }
 
 .girltalkweb .project-feature h1{
     color: #273aaa;
-}
+} */
 
 
 
@@ -341,7 +341,7 @@ margin-right:80px
     font-weight: bold;
     color: var(--pri-clr);
     margin-top: 10px;
-    border-bottom: 2px solid var(--pri-clr);
+    border-bottom: 1px solid var(--pri-clr);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -403,7 +403,7 @@ margin-right:80px
     flex: 1;
     max-width: 500px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 
@@ -456,6 +456,10 @@ margin-right:80px
     max-width: 500px;
 }
 
+.image-block:hover{
+    cursor: pointer;
+}
+
 .image-block img {
     width: 100%;
     height: auto;
@@ -463,12 +467,7 @@ margin-right:80px
     border-radius: 0px;
 }
 
-.ujm img{
-    max-height: 500px;
-    width: auto;
-    display: block;
-    border-radius: 5px;
-}
+
 
 
 /*PROJECT PAGE LIGHTBOX*/
@@ -490,7 +489,7 @@ margin-right:80px
 .lightbox img {
     max-width: 90%;
     max-height: 90%;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
 }
 
