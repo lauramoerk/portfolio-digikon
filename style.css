@@ -134,7 +134,7 @@ margin-right:80px
 .fade-in {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
 /* When element is in view, make it visible */
@@ -465,6 +465,57 @@ margin-right:80px
     height: auto;
     display: block;
     border-radius: 0px;
+}
+
+/* Full-Width Quote */
+.project-quote {
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    font-family: MeloDrama;
+    color: var(--text-color);
+    padding: 50px 0px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quote Author Name */
+.project-quote cite {
+    width: 100%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--pri-clr); /* Red */
+    margin-top: 40px;
+    display: block;
+    line-height: 0.5;
+    text-align: right;
+    font-family: WorkSans;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-quote {
+        font-size: 28px;
+        padding: 30px 15px;
+    }
+    .project-quote cite {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-quote {
+        font-size: 22px;
+        padding: 20px 10px;
+    }
+    .project-quote cite {
+        font-size: 16px;
+    }
 }
 
 
