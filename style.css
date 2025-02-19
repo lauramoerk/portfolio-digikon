@@ -23,15 +23,19 @@
 /*GENERAL STYLING*/
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #fefefe;
     font-family: WorkSans;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: WorkSans;
+    font-weight: 600;
+}
 
 p {
+    font-family: WorkSans;
     margin: 0px;
 }
 
@@ -146,44 +150,315 @@ margin-right:80px
 /*SPECIFICPAGES STYLE*/
 
 /*ABOUT ME PAGE*/
-.project-link-all{
-    width: 100%;
-    text-align: end;
-    align-self: flex-end;
-    justify-self: flex-end;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--pri-clr);
-}
+
 
 .additional-work {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 20px;
     margin: auto;
+    max-width: 1200px;
 }
 
+/* Title Styling */
 .additional-work h2 {
     font-family: WorkSans;
     font-weight: 600;
+    text-align: left;
 }
 
-.additional-work .work-grid {
+/* RESPONSIVE WORK GRID */
+.additional-work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
     gap: 20px;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
-.project-link {
-    display: block;
-    text-align: right;
-    font-weight: 700;
+/* Work Item Styling */
+.additional-work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
-    color: var(--pri-clr);
-    padding-right: 50px;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
 }
+
+.additional-work-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 0px;
+}
+
+/* Text under images */
+.additional-work-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--pri-clr);
+    margin-top: 10px;
+    border-bottom: 1px solid var(--pri-clr);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Subtle Hover Effect */
+.additional-work-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Experience Section */
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: flex-start; 
+  width: 95%;
+    margin: auto;
+    padding: 30px;
+}
+
+
+.experience-title {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    flex: 1; 
+    text-align: end;
+}
+
+
+.experience-grid {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    flex: 3; 
+}
+
+.experience-item {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 15px; 
+    padding: 8px; 
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 80px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+}
+
+.experience-item.active {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.experience-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+
+.experience-item h3 {
+    flex: 1;
+    font-size: 1.2em;
+    font-family: WorkSans;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+}
+
+.experience-text{
+   margin-right: auto;
+}
+
+
+.years {
+    font-size: 0.9em;
+    color: gray;
+    text-align: right;
+}
+
+
+
+/* Education Section */
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.education-title {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    flex: 1; 
+}
+
+
+.education-grid {
+    display: flex;
+    max-width: 900px;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    flex: 3; 
+}
+
+.education-item {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 15px; 
+    padding: 8px; 
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 80px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+}
+
+
+.education-item.active {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.education-item img {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 0px;
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+
+.education-item h3 {
+    flex: 1;
+    font-size: 1.1em; 
+    font-family: WorkSans;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+}
+
+.education-text{
+    margin-right: auto;
+ }
+.years {
+    font-size: 0.85em; /* Reduced font size */
+    color: gray;
+    text-align: right;
+}
+
+/*MEDIA ABOUT ME*/
+/* Responsive Layout for Small Screens */
+
+/* additional work media queries */
+@media (max-width: 1024px) {
+    .additional-work-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tablets: 2 columns */
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .additional-work-grid {
+        grid-template-columns: 1fr; /* Mobile: 1 column */
+    }
+
+    .project-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .additional-work-grid {
+        grid-template-columns: repeat(2, 1fr); /* Small tablets: 2 columns */
+    }
+
+    .project-link {
+        text-align: center; /* Center the link on smaller screens */
+        padding-right: 0;
+    }
+
+    .experience-container, .education-container {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-title, .education-title {
+        width: 100%; /* Ensure title takes full width */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .experience-grid, .education-grid {
+        max-width: 100%; /* Allow full responsiveness */
+        width: 90%;
+    }
+
+    .experience-item, .education-item {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        height: auto; /* Allow height to be dynamic */
+        padding: 15px;
+    }
+
+    .experience-item img, .education-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* Additional Work Media Queries */
+@media (max-width: 1024px) {
+    .additional-work-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tablets: 2 columns */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .additional-work-grid {
+        grid-template-columns: repeat(2, 1fr); /* Small tablets: 2 columns */
+    }
+
+    .project-link {
+        text-align: center; /* Center the link on smaller screens */
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .additional-work-grid {
+        grid-template-columns: 1fr; /* Mobile: 1 column */
+    }
+
+    .project-link {
+        font-size: 14px;
+    }
+}
+
 /* NAVBAR STYLES */
 .navbar {
     display: flex;
@@ -390,6 +665,7 @@ margin-right:80px
     padding: 20px 20px;
     padding-top: 50px;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .project-feature .text-content {
@@ -446,7 +722,7 @@ margin-right:80px
 .project-container {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
     max-width: 1200px;
     margin: auto;
 }
