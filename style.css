@@ -134,7 +134,7 @@ margin-right:80px
 .fade-in {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    transition: opacity 0.2s ease-out, transform 0.4s ease-out;
 }
 
 /* When element is in view, make it visible */
@@ -145,17 +145,45 @@ margin-right:80px
 
 /*SPECIFICPAGES STYLE*/
 
-/*GT PAGES*/
-/* .gt .project-feature h1{
-    color: #273aaa;
+/*ABOUT ME PAGE*/
+.project-link-all{
+    width: 100%;
+    text-align: end;
+    align-self: flex-end;
+    justify-self: flex-end;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--pri-clr);
 }
 
-.girltalkweb .project-feature h1{
-    color: #273aaa;
-} */
+.additional-work {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}
 
+.additional-work h2 {
+    font-family: WorkSans;
+    font-weight: 600;
+}
 
+.additional-work .work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
 
+.project-link {
+    display: block;
+    text-align: right;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--pri-clr);
+    padding-right: 50px;
+}
 /* NAVBAR STYLES */
 .navbar {
     display: flex;
