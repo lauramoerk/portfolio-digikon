@@ -148,6 +148,10 @@ margin-right:80px
 }
 
 /*SPECIFICPAGES STYLE*/
+.some img{
+    max-height:400px;
+    object-fit: contain;
+}
 
 /*ABOUT ME PAGE*/
 
