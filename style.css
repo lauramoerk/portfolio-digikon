@@ -1019,4 +1019,38 @@ main{
         padding-left: 10px;
     }
 }
+.project-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--pri-clr);
+    text-align: end;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--pri-clr);
+    transition: color 0.3s ease-in-out;
+}
 
+.project-link::after {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Initial arrow size */
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 10' fill='none' stroke='%23c0392b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 5h20M15 1l5 4-5 4'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left center;
+    color: var(--pri-clr);
+}
+
+
+.project-link:hover {
+    color: var(--pri-clr);
+}
+
+.project-link:hover::after {
+    transform: scaleX(1.8); /* Expands the arrow */
+}
