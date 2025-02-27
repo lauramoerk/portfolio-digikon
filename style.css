@@ -153,6 +153,57 @@ margin-right:80px
     object-fit: contain;
 }
 
+
+/*CONTACT PAGE*/
+.contactpage main{
+    gap: 30px !important;
+    padding: 20px;
+    padding-top:50px;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.contactpage h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--pri-clr);
+    font-family: WorkSans;
+    line-height: 1;
+}
+.contact-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text h1{
+    font-size: 5rem;
+    margin-top: 0px;
+}
+.contact-text-info{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 10px;
+}
+
+.contact-text-info-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text-info-item h4{
+    margin-bottom: 10px;
+}
+.contact-img{
+    max-width: 300px;
+}
+
 /*ABOUT ME PAGE*/
 
 
@@ -1054,3 +1105,4 @@ main{
 .project-link:hover::after {
     transform: scaleX(1.8); /* Expands the arrow */
 }
+
