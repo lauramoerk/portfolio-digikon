@@ -515,17 +515,32 @@ gap: 10px;
 }
 
 /* NAVBAR STYLES */
-.navbar {
+
+.navbar-index {
     display: flex;
-    justify-content: end;
+    justify-content: end;  
     align-items: center;
     padding: 15px 20px;
     position: fixed;
-    width: 100%;
+    width: 97%;
     top: 0;
-   right: 0;
+left: 0;
     z-index: 1000;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 97%;
+    top: 0;
+left: 0;
+    z-index: 1000;
+}
+
+
 
 /* Navigation Links (Desktop & Tablet) */
 .nav-links {
@@ -550,6 +565,18 @@ gap: 10px;
     transition: 0.3s;
     font-family: WorkSans;
     font-weight: 400;
+}
+
+.logo a{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--pri-clr);
+}
+
+.logo:hover{
+    color: var(--pri-clr);
 }
 
 .nav-links a:hover {
