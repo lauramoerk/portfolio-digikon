@@ -22,6 +22,10 @@
 
 /*GENERAL STYLING*/
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0;
     padding: 20px;
@@ -45,7 +49,12 @@ flex-direction: column;
 gap:150px;
 justify-content: center;
 margin-left: 80px;
-margin-right:80px
+margin-right:80px;
+padding-top:50px;
+}
+
+.index main{
+    padding-top: 0%;
 }
 
 .container {
@@ -123,11 +132,10 @@ margin-right:80px
     margin-right: 50px;
     z-index: 10;
 }
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -137,8 +145,8 @@ margin-right:80px
 
 .fade-in {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.2s ease-out, transform 0.4s ease-out;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 /* When element is in view, make it visible */
@@ -249,16 +257,22 @@ gap: 10px;
     border-radius: 0px;
 }
 
-/* Text under images */
+.viewall{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+/* Text under images*/
 .additional-work-item p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--pri-clr);
     margin-top: 10px;
-    border-bottom: 1px solid var(--pri-clr);
+    width: 100%;
     display: inline-block;
     padding-bottom: 5px;
-}
+    text-align: center;
+} 
 
 /* Subtle Hover Effect */
 .additional-work-item:hover {
@@ -726,9 +740,7 @@ left: 0;
 }
 
 .work-item p {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--pri-clr);
+    text-align: center;
     margin-top: 10px;
     display: inline-block;
     padding-bottom: 5px;
@@ -758,12 +770,6 @@ left: 0;
     max-width: 600px;
 }
 
-.project-link{
-    text-align: end;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--pri-clr);
-}
 
 .project-feature h2 {
     font-size: 18px;
@@ -1104,6 +1110,7 @@ main{
     position: relative;
     display: inline-flex;
     align-items: center;
+    justify-self: end;
     text-decoration: none;
     color: var(--pri-clr);
     text-align: end;
