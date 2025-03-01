@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const submenuToggles = document.querySelectorAll(".submenu-toggle");
 
     // Toggle Mobile Menu
-    burgerMenu.addEventListener("click", function () {
+    burgerMenu.addEventListener("hover", function () {
         navLinks.classList.toggle("active");
     });
 
     // Toggle Submenu on Click (Mobile)
     submenuToggles.forEach(toggle => {
-        toggle.addEventListener("click", function (event) {
+        toggle.addEventListener("hover", function (event) {
             event.preventDefault();
             const submenu = this.nextElementSibling;
             submenu.classList.toggle("active");
